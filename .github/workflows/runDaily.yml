@@ -15,4 +15,4 @@ jobs:
     - name: testing
       uses: actions/checkout@v2 
     - name: run the script
-      run: sh ./checkDormSite.sh
+      run: sh ./checkDormAvail.sh
