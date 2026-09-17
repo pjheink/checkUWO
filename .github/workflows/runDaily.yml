@@ -5,7 +5,7 @@ name: checkUWOshWIP
 # Controls when the workflow will run
 on:
     schedule:
-    - cron: '0 12 * * *'
+    - cron: '15 13 * * *'
 
 jobs:
   run-script:
