@@ -6,5 +6,13 @@ URL="https://uwosh.starrezhousing.com/StarRezPortalXConference/F5839110/30/377/A
 # Fetch the page
 html=$(curl -sL "$URL")
 
-echo "=== find the matching phrase ==="
-echo "$html" | grep -o 'Check back later'
+# find the matching phrase
+phrase="$html" | grep -o 'Check back later'
+
+# check for the phrase
+if [${#phrase} -lt 1]; then
+  echo "Good news... try the reservation website!"
+  exit 0
+else
+  echo $phrase
+fi
