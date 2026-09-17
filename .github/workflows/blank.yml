@@ -29,7 +29,7 @@ jobs:
 
       # sends an text message
       - name: Send a text
-        echo "test message" | mail -s "update from UWOsh" 8595591262@vtext.com
+        run: echo "test message" | mail -s "update from UWOsh" 8595591262@vtext.com
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
