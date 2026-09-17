@@ -3,10 +3,12 @@
 name: checkUWOshWIP
 
 # Controls when the workflow will run
-on:
-    schedule:
-    - cron: '47 9 * * *'
-
+  on:
+      schedule:
+        - cron: '25 * * * *'
+# Triggers the workflow on push or pull request events but only for the "main" branch
+    push:
+      branches: [ "main" ]
 jobs:
   run-script:
     runs-on: ubuntu-latest
