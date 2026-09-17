@@ -14,6 +14,5 @@ jobs:
     steps:
     - name: testing
       uses: actions/checkout@v2 
-    - name: Run Script
-      run: |
-        echo "is this doing anything?"
+    - name: run the script
+      run: sh ./checkDormSite.sh
