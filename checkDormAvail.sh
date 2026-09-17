@@ -10,9 +10,9 @@ html=$(curl -sL "$URL")
 phrase="$html" | grep -o 'Check back later'
 
 # check for the phrase
-if [[${#phrase} -lt 1]]; then
-  echo "Good news... try the reservation website!"
+if [[${#phrase} -gt 0]]; then
+  echo $phrase
   exit 0
 else
-  echo $phrase
+  echo "Good news... try the reservation website!"
 fi
