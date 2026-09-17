@@ -7,8 +7,8 @@ on:
   schedule:
     - cron: '53 13 * * *'
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  # push:
-  #   branches: [ "main" ]
+  push:
+    branches: [ "main" ]
   # pull_request:
   #   branches: [ "main" ]
 
@@ -26,6 +26,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+
+      # sends an text message
+      - name: Send a text
+        echo "test message" | mail -s "update from UWOsh" 8595591262@vtext.com
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
