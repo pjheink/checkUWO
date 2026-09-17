@@ -3,11 +3,11 @@
 name: checkUWOshWIP
 
 # Controls when the workflow will run
-  on:
-    schedule:
-      - cron: '25 * * * *'
-    push:
-      branches: [ "main" ]
+on:
+  schedule:
+    - cron: '28 * * * *'
+  push:
+    branches: [ "main" ]
       
 jobs:
   run-script:
