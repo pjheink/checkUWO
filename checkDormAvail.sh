@@ -10,8 +10,10 @@ html=$(curl -sL "$URL")
 phrase="$html" | grep -o 'Check back later'
 echo "-----"
 echo $phrase
-echo "this has ${#phrase} characters
+# echo "this has ${#phrase} characters
 echo "-----"
+
+exit 0
 
 # check for the phrase
 if [[${#phrase} -gt 0]]; then
