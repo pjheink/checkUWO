@@ -9,7 +9,9 @@ html=$(curl -sL "$URL")
 # find the matching phrase
 aaa="$html" | grep -o 'Check back later'
 echo "-----"
-echo $aaa
+echo "@html"
+echo "$html"
+echo "$aaa"
 echo "$html" | grep -o 'Check back later'
 echo $html | grep -o 'Check back later'
 echo "this has ${#aaa} characters"
