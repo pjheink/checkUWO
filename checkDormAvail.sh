@@ -7,19 +7,19 @@ URL="https://uwosh.starrezhousing.com/StarRezPortalXConference/F5839110/30/377/A
 html=$(curl -sL "$URL")
 
 # find the matching phrase
-phrase="$html" | grep -o 'Check back later'
+aaa="$html" | grep -o 'Check back later'
 echo "-----"
-echo $phrase
+echo $aaa
 echo "$html" | grep -o 'Check back later'
 echo $html | grep -o 'Check back later'
-# echo "this has ${#phrase} characters
+echo "this has ${#aaa} characters"
 echo "-----"
 
-exit 0
+#exit 0
 
 # check for the phrase
-if [[${#phrase} -gt 0]]; then
-  echo $phrase
+if [[${#aaa} -gt 0]]; then
+  echo $aaa
   exit 0
 else
   echo "Good news... try the reservation website!"
