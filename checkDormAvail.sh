@@ -10,6 +10,8 @@ html=$(curl -sL "$URL")
 phrase="$html" | grep -o 'Check back later'
 echo "-----"
 echo $phrase
+echo "$html" | grep -o 'Check back later'
+echo $html | grep -o 'Check back later'
 # echo "this has ${#phrase} characters
 echo "-----"
 
