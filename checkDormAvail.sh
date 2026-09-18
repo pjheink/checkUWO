@@ -4,8 +4,8 @@
 URL="https://uwosh.starrezhousing.com/StarRezPortalXConference/F5839110/30/377/AirVenture_2026_Indi-Welcome_to_AirVentur?HadEmptyContext=True"
 
 # Fetch the page
-#html=$(curl -sL "$URL")
-html=$(wget -q - "$URL")
+html=$(curl -L "$URL")
+#html=$(wget -q - "$URL")
 
 # find the matching phrase
 aaa="$html" | grep -o 'Check back later'
