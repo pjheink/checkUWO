@@ -12,13 +12,13 @@ echo "-----"
 echo $aaa
 echo "$html" | grep -o 'Check back later'
 echo $html | grep -o 'Check back later'
-echo "this has ${#$aaa} characters"
+echo "this has ${#aaa} characters"
 echo "-----"
 
 #exit 0
 
 # check for the phrase
-if [[${#$aaa} -gt 0]]; then
+if [[${#aaa} -gt 0]]; then
   echo $aaa
   exit 0
 else
