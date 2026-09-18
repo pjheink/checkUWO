@@ -5,12 +5,11 @@ URL="https://uwosh.starrezhousing.com/StarRezPortalXConference/F5839110/30/377/A
 
 # Fetch the page
 html=$(curl -L "$URL")
-#html=$(wget -q - "$URL")
 
 # find the matching phrase
 aaa="$html" | grep -o 'Check back later'
 echo "-----"
-echo "$html" | grep -o 'script'
+echo "$aaa"
 echo "this has ${#aaa} characters"
 echo "-----"
 
