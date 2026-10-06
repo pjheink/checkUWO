@@ -3,9 +3,9 @@ name: checkUWOshWIP
 
 # Controls when the workflow will run
 on:
-  schedule:
-    - cron: '17 12 * * *'
-    - cron: '17  0 * * *'
+  # schedule:
+  #   - cron: '17 12 * * *'
+  #   - cron: '17  0 * * *'
   push:
     branches: [ "main" ]
       
