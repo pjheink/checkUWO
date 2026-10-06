@@ -14,7 +14,7 @@ html=$(wget -qO - "$URL")
 aaa="$html" | grep -o 'Check back later'
 echo "-----"
 echo "$aaa"
-echo "this has ${#aaa} characters"
+echo "this has ${#aaa} characters!"
 echo "-----"
 
 #exit 0
